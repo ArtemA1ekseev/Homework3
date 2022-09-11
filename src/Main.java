@@ -1,21 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задача 6.");
-        int WeightOneBananas = 80;
-        int QuantityBananas = 5;
-        int GramProductBananas = QuantityBananas * WeightOneBananas;
-        int WeightOneMilk = 105;
-        int QuantityMilk = 200;
-        int GramProductMilk = WeightOneMilk * (QuantityMilk / 100);
-        int WeightOneIceCream = 100;
-        int QuantityIceCream = 2;
-        int GramProductIceCream = QuantityIceCream * WeightOneIceCream;
-        int WeightOneEggs = 70;
-        int QuantityEggs = 4;
-        int GramProductEggs = QuantityEggs * WeightOneEggs;
-        int FinalWeightProduct = GramProductBananas + GramProductMilk + GramProductIceCream + GramProductEggs;
-        int grPerKg = 1000;
-        float weightKg = FinalWeightProduct/(float)grPerKg;
-        System.out.println("Общий вес спорт-завтрака - " + weightKg + " кг.");
+        System.out.println("Задача 7.");
+        int NeedResetKg = 7;
+        int NeedResetGram = 7 * 1000;
+        int WeightLoss1 = 250;
+        int WeightLoss2 = 500;
+        int QuantityFirstCase = NeedResetGram / WeightLoss1;
+        System.out.println( QuantityFirstCase + " дней уйдёт на похудение, если спортсмен будет терять каждый день по 250 грамм.");
+        int QuantitySecondCase = NeedResetGram / WeightLoss2;
+        System.out.println( QuantitySecondCase + " дней уйдёт на похудение, если спортсмен будет терять каждый день по 500 грамм.");
+        int AverageAmountGram = (WeightLoss1 + WeightLoss2) / 2;
+        int AverageDays = NeedResetGram / AverageAmountGram;
+        System.out.println(AverageDays + " дней уйдёт в среднем, чтобы добиться результата похудения.");
     }
 }
